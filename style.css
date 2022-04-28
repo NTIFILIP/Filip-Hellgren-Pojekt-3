@@ -53,17 +53,17 @@ header {
 .inner-header {
   justify-content: space-between;
   width: 70%;
-  max-width: 400px;
+  max-width: 700px;
   height: 100%;
 }
 
 .page-title {
   align-self: center;
-  font-size: 13px;
+  font-size: 28px;
 }
 
 .nav-bar {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .nav-bar a {
@@ -80,7 +80,7 @@ body {
 .book-ad {
   background-color: rgb(129, 203, 233);
   width: fit-content;
-  margin-top: 15px;
+  margin-top: 60px;
   padding: 15px;
 }
 
@@ -89,24 +89,27 @@ body {
   margin-left: 20px;
   align-items: center;
   background-color: rgba(73, 115, 255, 0.13);
-  padding: 10px;
+  padding: 10px 30px 10px 30px;
   border-radius: 2px;
 }
 
 .book-information h2:first-child {
-  margin-bottom: 20px;
+  font-size: 27px;
+  margin-bottom: 40px;
 }
 
 .book-information p {
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
 .purchase-button {
-  width: 90%;
-  min-width: 60px;
+  width: 100%;
+  min-width: 100px;
+  padding: 10px;
   background-color: #2aa84b;
-  border-radius: 2px;
   color: whitesmoke;
+  font-size: 26px;
 }
 
 .purchase-button:hover {
@@ -119,7 +122,7 @@ body {
 
 .reviews {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 80px;
   padding: 20px 0 20px 0;
   background-color: #a0e3fd;
 }
