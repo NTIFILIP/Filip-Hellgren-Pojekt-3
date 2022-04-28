@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 99;
+}
+
+.centered {
+  margin: auto;
+  text-align: center;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.shadowed {
+  filter: drop-shadow(0.5px 0.5px 2px rgba(0, 0, 0, 0.24));
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+  height: 100%;
+}
+
+a:hover {
+  background-color: rgb(72, 127, 228);
+}
+
+header {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 10vh;
+  min-height: 35px;
+  top: 0;
+}
+
+.inner-header {
+  justify-content: space-between;
+  width: 70%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.page-title {
+  align-self: center;
+  font-size: 13px;
+}
+
+.nav-bar {
+  font-size: 10px;
+}
+
+.nav-bar a {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+body {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  background-color: whitesmoke;
+}
+
+.book-ad {
+  background-color: rgb(129, 203, 233);
+  width: fit-content;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.book-information {
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: center;
+  background-color: rgba(73, 115, 255, 0.13);
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.book-information h2:first-child {
+  margin-bottom: 20px;
+}
+
+.book-information p {
+  margin-bottom: 5px;
+}
+
+.purchase-button {
+  width: 90%;
+  min-width: 60px;
+  background-color: #2aa84b;
+  border-radius: 2px;
+  color: whitesmoke;
+}
+
+.purchase-button:hover {
+  background-color: #20943f;
+}
+
+.small-text {
+  font-size: 4px;
+}
+
+.reviews {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0 20px 0;
+  background-color: #a0e3fd;
+}
+
+.review-list {
+  justify-content: space-evenly;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.review-list:not(:first-child) {
+  justify-content: space-around;
+}
+
+.review-object {
+  background-color: whitesmoke;
+  border-radius: 25px;
+  padding: 4px 10px 4px 4px;
+}
+
+.review-object div {
+  margin-left: 15px;
+}
+
+.review-object h4,
+.review-object p {
+  text-align: left;
+}
+
+.review-object img {
+  background-color: transparent;
+}
+
+footer {
+  background-color: lightskyblue;
+  width: 100%;
+  height: 5vh;
+  min-height: 20px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .review-list {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .review-object:not(:first-child) {
+    margin-top: 20px;
+  }
+}
