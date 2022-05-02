@@ -22,6 +22,7 @@
 
 .center-items {
   align-items: center;
+  justify-content: center;
 }
 
 .rounded {
@@ -29,7 +30,8 @@
 }
 
 .shadowed {
-  filter: drop-shadow(0.5px 0.5px 2px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(2px 0.5px 2px rgba(0, 0, 0, 0.24));
+  outline: rgba(0, 0, 0, 0.034) solid 2px;
 }
 
 a {
@@ -88,7 +90,7 @@ body {
   flex-direction: column;
   margin-left: 20px;
   align-items: center;
-  background-color: rgba(73, 115, 255, 0.13);
+  background-color: rgba(66, 77, 112, 0.13);
   padding: 10px 30px 10px 30px;
   border-radius: 2px;
 }
@@ -98,7 +100,7 @@ body {
   margin-bottom: 40px;
 }
 
-.book-information p {
+.book-information p:not(:last-child) {
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -117,20 +119,20 @@ body {
 }
 
 .small-text {
-  font-size: 4px;
+  font-size: 12px;
 }
 
 .reviews {
   width: 100%;
   margin-top: 80px;
-  padding: 40px 0 40px 0;
+  padding: 70px 0 70px 0;
   background-color: #a0e3fd;
 }
 
 .review-list {
   justify-content: space-evenly;
   margin: 20px auto;
-  width: 90%;
+  width: 95%;
 }
 
 .review-object {
@@ -153,15 +155,59 @@ body {
   background-color: transparent;
 }
 
+.background-information {
+  padding: 100px 0 100px 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.background-information div {
+  width: 70%;
+  min-width: 300px;
+}
+
+.book-content {
+  background-color: cornflowerblue;
+  margin-top: 80px;
+  min-width: 300px;
+}
+
+.book-content h2 {
+  padding: 30px 0 30px 0;
+}
+
+.book-feature {
+  justify-content: center;
+  background-color: rgb(200, 227, 245);
+  padding: 80px 0 80px 0;
+}
+
+.book-feature:nth-child(2n) {
+  flex-direction: row-reverse;
+  background-color: rgb(86, 178, 240);
+}
+
+.book-feature img {
+  margin-right: 50px;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.feature-info {
+  flex-direction: column;
+  max-width: 500px;
+}
+
 footer {
   background-color: lightskyblue;
   width: 100%;
   height: 5vh;
   min-height: 20px;
   bottom: 0;
+  align-items: center;
+  padding-left: 20px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1050px) {
   .review-list {
     flex-direction: column;
     width: 80%;
@@ -169,5 +215,20 @@ footer {
 
   .review-object:not(:first-child) {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .book-feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-feature:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  .book-feature img {
+    margin: 50px 0 50px 0;
   }
 }
