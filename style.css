@@ -55,13 +55,13 @@ header {
 .inner-header {
   justify-content: space-between;
   width: 70%;
-  max-width: 700px;
+  max-width: 850px;
   height: 100%;
 }
 
 .page-title {
   align-self: center;
-  font-size: 28px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .nav-bar {
@@ -84,6 +84,7 @@ body {
   width: fit-content;
   margin-top: 60px;
   padding: 15px;
+  align-items: center;
 }
 
 .book-information {
@@ -93,6 +94,8 @@ body {
   background-color: rgba(66, 77, 112, 0.13);
   padding: 10px 30px 10px 30px;
   border-radius: 2px;
+  justify-content: center;
+  height: fit-content;
 }
 
 .book-information h2:first-child {
@@ -166,7 +169,7 @@ body {
 }
 
 .book-content {
-  background-color: cornflowerblue;
+  background-color: rgb(149, 180, 238);
   margin-top: 80px;
   min-width: 300px;
 }
@@ -183,7 +186,7 @@ body {
 
 .book-feature:nth-child(2n) {
   flex-direction: row-reverse;
-  background-color: rgb(86, 178, 240);
+  background-color: rgb(210, 234, 250);
 }
 
 .book-feature img {
@@ -194,7 +197,11 @@ body {
 
 .feature-info {
   flex-direction: column;
-  max-width: 500px;
+  max-width: min(500px, 80vw);
+}
+
+.feature-info p {
+  margin-top: 10px;
 }
 
 footer {
@@ -230,5 +237,21 @@ footer {
 
   .book-feature img {
     margin: 50px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .book-ad {
+    flex-direction: column;
+  }
+
+  .book-ad img {
+    margin-bottom: 40px;
+    width: 320px;
+  }
+
+  .book-information {
+    width: 80%;
+    margin: 0;
   }
 }
