@@ -29,6 +29,10 @@
   justify-content: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .rounded {
   border-radius: 5px;
 }
@@ -92,7 +96,6 @@ body {
 }
 
 .book-information {
-  flex-direction: column;
   margin-left: 20px;
   background-color: rgba(66, 77, 112, 0.13);
   padding: 10px 30px 10px 30px;
@@ -114,7 +117,7 @@ body {
   width: 100%;
   min-width: 100px;
   padding: 10px;
-  background-color: #2aa84b;
+  background-color: #1e8b3b;
   color: whitesmoke;
   font-size: 26px;
 }
@@ -181,7 +184,6 @@ body {
 }
 
 .book-feature {
-  justify-content: center;
   background-color: rgb(200, 227, 245);
   padding: 80px 0 80px 0;
 }
@@ -198,7 +200,6 @@ body {
 }
 
 .feature-info {
-  flex-direction: column;
   max-width: min(500px, 80vw);
 }
 
@@ -221,16 +222,19 @@ body {
 
 .author-achievements div {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 50px;
 }
 
+.author-achievements div h3 {
+  background-color: rgb(206, 215, 224);
+  padding: 10px 15px;
+}
+
 .author-achievements div img {
+  box-sizing: border-box;
   max-width: 250px;
   max-height: 250px;
+  padding: 30px;
 }
 
 footer {
